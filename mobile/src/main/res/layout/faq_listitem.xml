@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="01dp"
+    android:layout_marginLeft="@dimen/faq_list_side_margin"
+    android:layout_marginRight="@dimen/faq_list_side_margin"
+    android:layout_marginTop="01dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionLayout"
+        >
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:paddingStart="6dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/PrimaryText"
+            tools:text="1. This app is to notify/alert you when you’re about to reach at yourmn asbdmas bdma sbmd kjasdjkasjhkd  Destination. Whether you’re going in a car or Public transit or train or even walking, it works for all. "
+            android:fontFamily="sans-serif"/>
+
+        <ImageView
+            android:id="@+id/down_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="6dp"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <!--
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignBaseline="@+id/question"-->
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/answerLayout"
+        android:layout_below="@+id/questionLayout"
+        >
+
+        <TextView
+            android:id="@+id/answer"
+            android:visibility="gone"
+            android:textColor="@color/PrimaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:paddingStart="6dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="10dp"
+            tools:visibility = "visible"
+            android:fontFamily="sans-serif-light"
+            tools:text="1. This app is to notify/alert you when you’re about to reach at yourmn asbdmas bdma sbmd kjasdjkasjhkd  Destination. Whether you’re going in a car or Public transit or train or even walking, it works for all. "/>
+
+       <!-- <TextView
+            android:id="@+id/answerViewStub"
+            android:layout_width="200dp"
+            android:layout_height="10dp"
+            android:visibility="gone"
+            tools:visibility = "visible"
+            android:layout_below="@+id/answer"
+            />-->
+        <ImageView
+            android:id="@+id/up_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            tools:visibility = "visible"
+            android:paddingLeft="6dp"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"
+            android:src="@drawable/ic_keyboard_arrow_up_black_24dp"
+           android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

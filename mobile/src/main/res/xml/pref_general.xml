@@ -1,0 +1,67 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_display_name"
+        android:inputType="textCapWords"
+        android:key="show_text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_display_name"
+        />
+    <EditTextPreference
+        android:inputType="numberDecimal"
+        android:key="version"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:editable="false"
+        android:title="@string/pref_title_version"
+        />
+    <ListPreference
+        android:defaultValue="driving"
+        android:entries="@array/pref_travel_mode_list_titles"
+        android:entryValues="@array/pref_travel_mode_list_values"
+        android:key="travel_mode"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_travel_mode"/>
+
+    <ListPreference
+        android:defaultValue="bus"
+        android:entries="@array/pref_transit_mode_list_titles"
+        android:entryValues="@array/pref_transit_mode_list_values"
+        android:key="transit_mode"
+        android:title="@string/pref_title_transit_mode_length"/>
+
+    <ListPreference
+        android:defaultValue="metric"
+        android:entries="@array/pref_unit_system_list_titles"
+        android:entryValues="@array/pref_unit_system_list_values"
+        android:key="unit_system"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_unit_system_travel_mode"/>
+
+    <ListPreference
+        android:defaultValue="en"
+        android:entries="@array/pref_languages_list_titles"
+        android:entryValues="@array/pref_languages_list_values"
+        android:key="language"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_language_mode"/>
+
+    <ListPreference
+        android:defaultValue="best_guess"
+        android:entries="@array/pref_traffic_list_titles"
+        android:entryValues="@array/pref_traffic_list_values"
+        android:key="traffic_model"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_traffic_model"/>
+
+</PreferenceScreen>

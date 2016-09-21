@@ -1,0 +1,250 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              tools:context="layout.MainFragment"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin_home"
+              android:paddingLeft="@dimen/activity_horizontal_margin_home"
+              android:paddingRight="@dimen/activity_horizontal_margin_home"
+              android:paddingTop="@dimen/activity_vertical_margin_home"
+              >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+       >
+        <!-- android:gravity="center"-->
+        <!--android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        android:gravity="center"-->
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="@dimen/weather_icon"
+            android:layout_height="@dimen/weather_icon"
+            tools:src = "@drawable/ic_storm"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text = "23"
+            android:textSize="30sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/weather_icon"
+            android:layout_toEndOf="@+id/weather_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text = "Thunder bolt"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/temp"
+            android:layout_toEndOf="@+id/temp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_name_geofence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+        <EditText
+            android:id="@+id/current_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/current_location"
+            android:textSize="18sp"
+            tools:text="se sdsdf"
+            android:gravity="center"
+            android:textColor="@color/PrimaryText"
+            />
+        </android.support.design.widget.TextInputLayout>
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar_current_location"
+            android:layout_alignTop="@+id/input_layout_name_geofence"
+            android:layout_alignBottom="@+id/input_layout_name_geofence"
+            android:layout_alignRight="@+id/input_layout_name_geofence"
+            android:layout_alignEnd="@+id/input_layout_name_geofence"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sdfsd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            >
+        <EditText
+            android:id="@+id/destination_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text = "Manyata Emabassy Tech Park"
+            android:hint="@string/hint_destination"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:focusable="false"
+            android:textColor="@color/PrimaryText"/>
+        </android.support.design.widget.TextInputLayout>
+        <!--<Button
+            android:id="@+id/destination_location_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/destination_location"
+            android:text="Set Destination Location/Set a Different Destination"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/ButtonText"/>-->
+        <!--<ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar_destination_location"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            />-->
+
+        <!--<ProgressBar
+
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar_destination_location"
+            android:layout_alignTop="@+id/sdfsd"
+            android:layout_alignBottom="@+id/sdfsd"
+            android:layout_alignRight="@+id/sdfsd"
+            android:layout_alignEnd="@+id/sdfsd"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+
+            />-->
+        <!--android:layout_below="@+id/progressBar_destination_location"
+            android:layout_alignLeft="@+id/progressBar_destination_location"
+            android:layout_alignStart="@+id/progressBar_destination_location"
+            android:gravity="center_vertical"-->
+
+        <!--android:visibility="gone"-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/remaining"
+            android:padding="10dp"
+            android:baselineAligned="false">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+            <EditText
+                android:id="@+id/remaining_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="18sp"
+               android:hint="Distance remaining"
+                android:gravity="center"
+                android:textColor="@color/PrimaryText"
+
+                />
+            </android.support.design.widget.TextInputLayout>
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar_remaining"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+            <EditText
+                android:id="@+id/remaining_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Time remaining"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/PrimaryText"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remaining"
+            android:text="Start/Stop"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/ButtonText"/>
+
+
+        <!--android:visibility="gone"-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "Enjoy your journey, Let us take care of your destination"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/PrimaryText"/>
+    </RelativeLayout>
+
+</LinearLayout>

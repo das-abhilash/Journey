@@ -1,0 +1,43 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="notifications_new_message"
+        android:title="@string/pref_title_alert_notifications"/>
+
+
+    <RingtonePreference
+        android:defaultValue="content://settings/system/ringtone"
+        android:dependency="notifications_new_message"
+        android:key="notifications_new_message_ringtone"
+        android:ringtoneType="ringtone"
+        android:title="@string/pref_title_ringtone"/> <!--alaram / ringtone / notification-->
+
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:dependency="notifications_new_message"
+        android:key="notifications_new_message_vibrate"
+        android:title="@string/pref_title_vibrate"/>
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:dependency="notifications_new_message"
+        android:key="max_volume"
+        android:title="@string/pref_title_maxVolume"
+        android:summaryOn= "Alert me at the max possible volume"
+        android:summaryOff= "Alert me at the current system volume"
+        />
+
+    <ListPreference
+        android:defaultValue="3"
+
+        android:entries="@array/pref_snooze_list_titles"
+        android:dependency="notifications_new_message"
+        android:entryValues="@array/pref_snooze_list_values"
+        android:key="snooze"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_snooze_length"/>
+
+</PreferenceScreen>

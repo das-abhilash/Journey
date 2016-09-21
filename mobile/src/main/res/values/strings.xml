@@ -1,0 +1,216 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">Journey</string>
+    <string name="detail_text">Address : %1$s\nCo-ordinates: %2$s %3$s\n\nAlert me ahead of: %4$s</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="empty_list">You haven\'t added any Location.\n Click on the \"+\" and  Add some.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_longitude">Address</string>
+    <string name="hint_radius">Alert me ahead of (in km)</string>
+    <string name="hint_latitude">Co-Ordinates</string>
+
+    <string name="hint_name_geofence">Name your Location</string>
+    <string name="title_add_geo_fence">Add a Location</string>
+
+
+    <string name="action_refresh">Refresh</string>
+    <string name="action_direction">Direction</string>
+    <string name="hint_subject">Subject</string>
+    <string name="hint_body">Body</string>
+    <string name="action_send">Send</string>
+    <string name="err_msg_subject">Subject shouldn\'t be Empty</string>
+    <string name="err_msg_body">Body Shouldn\'t be Empty</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_settings">Settings</string>
+
+
+    <string name="err_msg_radius">Radius shouldn\'t be Empty</string>
+    <string name="err_msg_range_radius">Radius should lie between 0.01 to 20.0 km</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name"> </string>
+
+    <string name="facebook_app_id">1780126872244529</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_alert_notifications">Alert Notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+    <!-- Strings related to Settings -->
+
+    <string-array name="pref_transit_mode_list_titles">
+        <item>Travel by Bus</item>
+        <item>Travel by Subway</item>
+        <item>Travel by Train</item>
+        <item>Travel by Tram and Light Rail</item>
+        <item>Travel by Train, Tram, Light Rail and Subway</item>
+    </string-array>
+    <string-array name="pref_transit_mode_list_values">
+        <item>bus</item>
+        <item>subway</item>
+        <item>train</item>
+        <item>tram</item>
+        <item>rail</item>
+    </string-array>
+    <string name="pref_title_travel_mode">Travel Mode</string>
+
+    <string-array name="pref_travel_mode_list_titles">
+        <item>Driving</item>
+        <item>Walking</item>
+        <item>Bicycling</item>
+        <item>Transit</item>
+    </string-array>
+    <string-array name="pref_travel_mode_list_values">
+        <item>driving</item>
+        <item>walking</item>
+        <item>bicycling</item>
+        <item>transit</item>
+    </string-array>
+
+
+    <string-array name="pref_unit_system_list_titles">
+        <item>metric</item>
+        <item>imperial</item>
+    </string-array>
+    <string-array name="pref_unit_system_list_values">
+        <item>metric</item>
+        <item>imperial</item>
+    </string-array>
+    <string-array name="pref_languages_list_titles">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Kannada</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Gujarati</item>
+        <item>Bengali</item>
+        <item>Marathi</item>
+    </string-array>
+    <string-array name="pref_languages_list_values">
+        <item>en</item>
+        <item>hi</item>
+        <item>kn</item>
+        <item>ta</item>
+        <item>te</item>
+        <item>gu</item>
+        <item>bn</item>
+        <item>mr</item>
+    </string-array>
+
+    <string name="pref_unit_system_travel_mode">Unit System</string>
+    <string name="pref_title_language_mode">Languages</string>
+
+    <string-array name="pref_traffic_list_titles">
+        <item>Best Guess</item>
+        <item>Pessimistic</item>
+        <item>Optimistic</item>
+    </string-array>
+    <string-array name="pref_traffic_list_values">
+        <item>best_guess</item>
+        <item>pessimistic</item>
+        <item>optimistic</item>
+    </string-array>
+
+    <string name="pref_title_traffic_model">Traffic Model</string>
+    <string name="pref_title_transit_mode">Transit Mode</string>
+
+    <string-array name="pref_snooze_list_titles">
+        <item>1 min</item>
+        <item>2 min</item>
+        <item>3min</item>
+        <item>4min</item>
+    </string-array>
+    <string-array name="pref_snooze_list_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string name="pref_title_snooze_length">Snooze Length</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_your_places">Your Places</string>
+    <string name="nav_timeline">Your Timeline</string>
+    <string name="nav_communicate">Communicate</string>
+    <string name="feedback_header">If you have any Suggestions or Grievances then write down to Us</string>
+    <string name="nav_header">Reached?</string>
+    <string name="nav_settings">Settings</string>
+    <string name="current_location">Current Location</string>
+    <string name="nav_feedback">Feedback</string>
+    <string name="nav_rate">Rate Us</string>
+    <string name="nav_sub_header">Good Morning</string>
+    <string name="nav_about">About</string>
+    <string name="nav_share">Share with Friends</string>
+    <string name="hint_destination">Destination</string>
+    <string name="edit_button_text">Edit</string>
+    <string name="nav_faq">FAQ</string>
+    <string name="title_activity_faq">Frequently Asked Questions</string>
+    <string name="title_activity_share">Share the app</string>
+    <string name="addName">Type your Name</string>
+    <string name="err_msg_duplicate">This is duplicate Data</string>
+    <string name="pref_title_maxVolume">Maximum Volume</string>
+    <string name="customToast">Click on Permissions \n then Enable \"Your Location\" Permission</string>
+    <string name="pref_title_transit_mode_length">Transit Mode</string>
+    <string name="metric_format_temperature"><xliff:g id="temp">%1.0f</xliff:g>\u00B0 C</string>
+    <string name="imperial_format_temperature"><xliff:g id="temp">%1.0f</xliff:g>\u00B0 F</string>
+    <string name="start_journey">Start my Journey</string>
+    <string name="stop_journey">Stop my Journey</string>
+    <string name="pref_title_version">Version</string>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="PrimaryText">#212121</color>
+    <color name="SecondaryText">#757575</color>
+    <color name="ButtonText">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="lightGrayBCG">#ffe0e0e0</color>
+    <color name="lime">#CDDC39</color>
+    <color name="lightCyan">#3ADAFF</color>
+    <color name="colorToastBCG">#282C32</color>
+</resources>
+<!-- #ff5177
+
+#AEEA00
+<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="PrimaryText">#212121</color>
+    <color name="ButtonText">#FFFFFF</color>-->

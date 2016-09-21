@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="@dimen/side_margin"
+    android:layout_marginRight="@dimen/side_margin"
+    android:layout_marginBottom="0.5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+
+    android:id="@+id/placelist"
+    app:cardCornerRadius="8dp"
+    ><!--app:elevation="100dp"
+    8dp-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    ><!--android:padding="6dp"-->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text = "WORK"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="8dp"
+        android:padding="6dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="6dp"
+        android:paddingEnd="6dp"
+        android:paddingLeft="6dp"
+        android:paddingStart="6dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp">
+        <TextView
+            android:id="@+id/latitude"
+            android:textSize="14sp"
+            android:textColor="@color/card_content_textcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text = "Address : Munekolala Layout, Thubaarahsli, Munekkuala,Bangalore, Pin : 760002"
+
+            />
+        <TextView
+            android:id="@+id/longitude"
+
+
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text = "longitude : 75.08980480348"
+            android:layout_below="@+id/latitude"
+
+            android:textColor="@color/PrimaryText"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/radius"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text = "Radius : 1km"
+            android:layout_below="@+id/longitude"
+
+            android:textColor="@color/PrimaryText"
+            android:textSize="14sp"/><!--android:layout_marginBottom="0.5dp"
+            android:layout_marginTop="0.5dp"-->
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_margin="6dp"><!--android:layout_margin="6dp"-->
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/edit_button_text"
+            android:layout_weight="1"
+            android:textColor="@color/PrimaryText"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "Delete"
+            android:layout_weight="1"
+            android:textColor="@color/PrimaryText"
+            android:paddingBottom="10dp"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+    <!--<android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        app:columnCount="2"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <TextView
+            app:layout_gravity="fill_horizontal"
+            android:gravity="center_horizontal"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:id="@+id/name"
+            tools:text = "WORK"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="8dp"
+            android:padding="6dp"
+            />
+        &lt;!&ndash;<android.support.v7.widget.Space
+            android:layout_height="5dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:layout_columnSpan="2"
+            android:background="#000000"
+            />&ndash;&gt;
+
+        <View
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            app:layout_columnSpan="2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="2dp"
+            />
+        <TextView
+            android:text="Latitude"
+            android:id="@+id/latitudeLabel"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_column="0"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            app:layout_rowWeight="1"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:paddingStart="6dp"
+            android:paddingLeft="6dp"/>
+        <TextView
+            android:text="43.7878346"
+            android:id="@+id/latitude"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_column="1"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-light"
+            />
+        <TextView
+            android:id="@+id/longitudeLabel"
+            android:text="Longitude"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:paddingStart="6dp"
+            android:paddingLeft="6dp"
+            />
+        <TextView
+            android:id="@+id/longitude"
+            tools:text="75.223432422"
+            app:layout_columnWeight="1"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-light"
+            />
+        <TextView
+            android:id="@+id/radiusLabel"
+            android:text="Alert me ahead of"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:paddingStart="6dp"
+            android:paddingLeft="6dp"
+            />
+        <TextView
+            android:id="@+id/radius"
+            tools:text="2 km"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-light"
+            />
+        <View
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            app:layout_columnSpan="2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="2dp"
+            />
+
+        <TextView
+            android:id="@+id/delete"
+            android:text="Delete"
+            app:layout_columnWeight="1"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            />
+        <TextView
+            android:id="@+id/edit"
+            android:text="Edit"
+            app:layout_columnWeight="1"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:visibility="gone"
+            />
+        &lt;!&ndash;<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/powered_by_google_light"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>&ndash;&gt;
+
+
+    </android.support.v7.widget.GridLayout>-->
+
+</android.support.v7.widget.CardView>
